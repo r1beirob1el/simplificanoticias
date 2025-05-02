@@ -1,0 +1,29 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+body { background: #f9f9f9; }
+.container { width: 90%; max-width: 800px; margin: 0 auto; padding: 1rem; }
+
+/* Cabeçalho */
+.site-header { background: #0066cc; padding: 1rem 0; }
+.site-header h1 a { color: #fff; text-decoration: none; font-size: 1.8rem; }
+.site-nav a { color: #fff; margin-left: 1rem; text-decoration: none; font-weight: bold; }
+.site-nav a:hover { text-decoration: underline; }
+
+/* Conteúdo */
+article { background: #fff; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+article h2 { margin-bottom: 0.5rem; color: #0066cc; }
+article p { margin-bottom: 0.5rem; }
+article a { color: #0066cc; text-decoration: none; }
+article a:hover { text-decoration: underline; }
+
+/* Bloco de afiliado */
+.affiliate { background: #e8f4ff; padding: 0.75rem; margin-top: 0.75rem; border-left: 4px solid #0066cc; }
+.affiliate a { color: #0066cc; font-weight: bold; text-decoration: none; }
+
+/* Anúncios */
+.adsbygoogle { margin: 1rem 0; }
+
+/* Footer */
+.site-footer { background: #333; color: #fff; padding: 1rem 0; text-align: center; margin-top: 2rem; }
+.site-footer a { color: #fff; text-decoration: none; }
