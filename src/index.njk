@@ -4,11 +4,34 @@ title: Simplifica Notícias
 ---
 
 <h1>Bem‑vindo ao Simplifica Notícias!</h1>
+
 {% for item in collections.news %}
   <article>
     <h2>{{ item.data.title }}</h2>
     <p>{{ item.data.summary }}</p>
     <a href="{{ item.data.url }}" target="_blank">Leia mais →</a>
-    <hr>
+
+    <!-- Link de afiliado Amazon -->
+    <aside class="affiliate">
+      <p>🔗 Gostou desta notícia? Confira este livro:</p>
+      <a href="https://www.amazon.com.br/dp/B0C5F1CJF5?tag=simplifica0c6-20"
+         target="_blank" rel="noopener">
+        📚 Comprar na Amazon
+      </a>
+    </aside>
   </article>
+
+  <!-- A cada 3 artigos, exibe um bloco de anúncio AdSense -->
+  {% if loop.index0 % 3 == 2 %}
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6593537699873785"
+         data-ad-slot="6913975243"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  {% endif %}
 {% endfor %}
+
