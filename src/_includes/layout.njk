@@ -30,7 +30,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; {{ "now" | date("YYYY") }} Simplifica Notícias. Todos os direitos reservados.</p>
+      <!-- Ano dinâmico via JavaScript em vez de filtro -->
+      <p>&copy; <script>document.write(new Date().getFullYear());</script> Simplifica Notícias. Todos os direitos reservados.</p>
     </div>
   </footer>
 </body>
